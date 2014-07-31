@@ -1,0 +1,36 @@
+{
+  "name": "discio",
+  "version": "0.0.1",
+  "description": "Local storage library.",
+  "preferGlobal": true,
+  "bin": {
+    "discio": "discio.js"
+  },
+  "author": "Walter M. Soto Reyes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waltersoto/discio.git"
+  },
+  "homepage": "http://soto.co/project/discio",
+  "contributors": [],
+  "keywords": [
+    "database",
+    "json",
+    "access",
+    "storage",
+    "local storage"
+  ],
+  "license": "MIT",
+  "bugs": "https://github.com/waltersoto/discio",
+  "dependencies": {
+    "qarr": ">=0.0.2"
+  },
+  "files": [
+		"discio.js",
+		"LICENSE"
+	 ],
+  "engines": {
+    "node": "*"
+  },
+  "devDependencies": {}
+}
