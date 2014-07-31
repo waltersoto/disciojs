@@ -1,11 +1,9 @@
 {
   "name": "discio",
-  "version": "0.0.1",
+  "version": "0.0.2-beta",
   "description": "Local storage library.",
   "preferGlobal": true,
-  "bin": {
-    "discio": "discio.js"
-  },
+  "main": "discio.js"
   "author": "Walter M. Soto Reyes",
   "repository": {
     "type": "git",
