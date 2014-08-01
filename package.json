@@ -1,6 +1,6 @@
 {
   "name": "discio",
-  "version": "0.0.2-beta",
+  "version": "0.0.3-beta",
   "description": "Local storage library.",
   "preferGlobal": true,
   "main": "discio.js",

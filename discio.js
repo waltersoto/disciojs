@@ -33,6 +33,7 @@
         return false;
     };
     
+    
 
 
     var discio = {
@@ -63,8 +64,7 @@
                     var newSet = {
                         name: setName,
                         records: []
-                    };
-                 
+                    }; 
                     fs.writeFile(file, JSON.stringify(newSet), function (err) {
                         if (err) { return false; }
                     });
@@ -126,7 +126,10 @@
                         toInsert[i].id = ++lastIndex;
                         json.records.push(toInsert[i]);
                     } 
-                    toStorage(json, file); 
+                    toStorage(json, file);
+                    while (toInsert.length > 0) {
+                        toInsert.pop();
+                    }
                 }
 
                 if (toDelete.length > 0) { 
@@ -136,7 +139,10 @@
                             json.records.splice(index, 1);
                         }
                     }
-                    toStorage(json, file);      
+                    toStorage(json, file);
+                    while (toDelete.length > 0) {
+                        toDelete.pop();
+                    }
                 }
 
                 if (toUpdate.length > 0) {
@@ -154,6 +160,9 @@
                         } 
                     }
                     toStorage(json, file);
+                    while (toUpdate.length > 0) {
+                        toUpdate.pop();
+                    }
                 }
             
             };
